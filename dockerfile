@@ -1,4 +1,4 @@
-FROM Ubuntu
+FROM ubuntu:latest
 RUN apt update && apt install apache2 -y && apt clean
 COPY index.html /var/www/html/index.html
 EXPOSE 80
